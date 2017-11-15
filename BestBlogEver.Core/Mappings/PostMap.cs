@@ -19,7 +19,7 @@ namespace BestBlogEver.Core.Mappings
             Id(x => x.Id);
 
             Map(x => x.Title)
-                .Length(5000)
+                .Length(500)
                 .Not.Nullable();
 
             Map(x => x.ShortDescription)
@@ -31,15 +31,14 @@ namespace BestBlogEver.Core.Mappings
                 .Not.Nullable();
 
             Map(x => x.Meta)
-                .Length(5000)
+                .Length(1000)
                 .Not.Nullable();
 
             Map(x => x.UrlSlug)
-                .Length(5000)
+                .Length(200)
                 .Not.Nullable();
 
             Map(x => x.Published)
-                .Length(5000)
                 .Not.Nullable();
 
             Map(x => x.PostedOn)
